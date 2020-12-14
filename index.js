@@ -1,6 +1,6 @@
 const express = require("express");
-
 const app = express();
+const port = process.env.PORT || 3000;
 
 
 app.get('/soko/products', (req, res) => {
@@ -37,6 +37,6 @@ app.get('/soko/products', (req, res) => {
 });
 
 
-app.listen(3000 || port, (req, res) =>{
+app.listen(port, (req, res) =>{
     console.log('Server is up');
 });
